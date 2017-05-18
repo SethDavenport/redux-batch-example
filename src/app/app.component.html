@@ -1,3 +1,11 @@
 <h1>
   {{title}}
 </h1>
+
+<button (click)=singleDispatch()>+ (singleton)</button>
+<hr>
+
+<button (click)=addToBatch()>+ (as batch)</button>
+<button (click)=batchDispatch()>Dispatch batch</button>
+
+<p>The current count is: {{ count$ | async }}</p>
